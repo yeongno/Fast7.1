@@ -6,4 +6,6 @@ dropdownElementList.map(function (dropdownToggleEl) {
   return new Dropdown(dropdownToggleEl)
 })
 
-new Modal(document.querySelector('#exampleModal'))
+new Modal(document.querySelector('#exampleModal'), {
+  backdrop: 'static'
+})

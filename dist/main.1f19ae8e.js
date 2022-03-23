@@ -5704,7 +5704,9 @@ var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-tog
 dropdownElementList.map(function (dropdownToggleEl) {
   return new _dropdown.default(dropdownToggleEl);
 });
-new _modal.default(document.querySelector('#exampleModal'));
+new _modal.default(document.querySelector('#exampleModal'), {
+  backdrop: 'static'
+});
 },{"bootstrap/js/dist/dropdown":"node_modules/bootstrap/js/dist/dropdown.js","bootstrap/js/dist/modal":"node_modules/bootstrap/js/dist/modal.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
